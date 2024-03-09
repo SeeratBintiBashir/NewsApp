@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".ui.DescriptionActivity">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/description_view_imge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/description_view_image" />
+
+
+            <TextView
+                android:id="@+id/description_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/description_view_imge"
+                android:layout_marginTop="8dp"
+                android:text="Jokowi: Tiga jPeriode ke Depan Tentukan RI Jadi Negara Maju"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/description_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="CNN Indonesia"
+                android:textColor="@color/grey2" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:id="@+id/txt_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="#Category"
+                    android:textColor="@color/blue" />
+
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="5mins ago"
+                    android:textColor="@color/grey2" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/description_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Presiden Joko Widodo (Jokowi) menilai pemimpin Indonesia pada tiga periode ke depan memiliki peran krusial dalam menentukan nasib Indonesia untuk menjadi negara maju.
+        Jokowi mengatakan hasil pemilu di tahun 2024, 2029 dan 2034 menjadi penentu apakah Indonesia akan menjadi negara maju atau tetap berkembang.Dalam tiga kepemimpinan yang akan datang 2024,
+         2029, dan 2034 itu sangat menentukan sekali,kata Jokowi saat menghadiri Rapimnas Samawi di Istora Senayan, Jakarta, Sabtu (7/10).
+         Mengantar kita ini bisa menjadi, melompat menjadi negara maju atau negara tidak maju,imbuhnya.
+         Jokowi lalu berharap agar masyarakat berhati-hati dan teliti dala.Presiden Joko Widodo (Jokowi) menilai pemimpin Indonesia pada tiga periode ke depan memiliki peran krusial dalam menentukan nasib Indonesia untuk menjadi negara maju.
+        Jokowi mengatakan hasil pemilu di tahun 2024, 2029 dan 2034 menjadi penentu apakah Indonesia akan menjadi negara maju atau tetap berkembang.Dalam tiga kepemimpinan yang akan datang 2024,
+        2029, dan 2034 itu sangat menentukan sekali,kata Jokowi saat menghadiri Rapimnas Samawi di Istora Senayan, Jakarta, Sabtu (7/10).
+        Mengantar kita ini bisa menjadi, melompat menjadi negara maju atau negara tidak maju,imbuhnya.Jokowi lalu berharap agar masyarakat berhati-hati dan teliti dala Presiden Joko Widodo (Jokowi) menilai pemimpin Indonesia pada tiga periode ke depan memiliki peran krusial dalam menentukan nasib Indonesia untuk menjadi negara maju.
+        Jokowi mengatakan hasil pemilu di tahun 2024, 2029 dan 2034 menjadi penentu apakah Indonesia akan menjadi negara maju atau tetap berkembang.Dalam tiga kepemimpinan yang akan datang 2024,
+        2029, dan 2034 itu sangat menentukan sekali,kata Jokowi saat menghadiri Rapimnas Samawi di Istora Senayan, Jakarta, Sabtu (7/10).
+        Mengantar kita ini bisa menjadi, melompat menjadi negara maju atau negara tidak maju,imbuhnya.
+        Jokowi lalu berharap agar masyarakat berhati-hati dan teliti dala Presiden Joko Widodo (Jokowi) menilai pemimpin Indonesia pada tiga periode ke depan memiliki peran krusial dalam menentukan nasib Indonesia untuk menjadi negara maju.
+        Jokowi mengatakan hasil pemilu di tahun 2024, 2029 dan 2034 menjadi penentu apakah Indonesia akan menjadi negara maju atau tetap berkembang.Dalam tiga kepemimpinan yang akan datang 2024,
+         2029, dan 2034 itu sangat menentukan sekali,kata Jokowi saat menghadiri Rapimnas Samawi di Istora Senayan, Jakarta, Sabtu (7/10).
+         Mengantar kita ini bisa menjadi, melompat menjadi negara maju atau negara tidak maju,imbuhnya.
+         Jokowi lalu berharap agar masyarakat berhati-hati dan teliti dala"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

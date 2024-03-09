@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="16dp"
+    >
+
+    <ImageView
+        android:id="@+id/bg_icon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/green_bg_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/GH1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcome_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Welcome to"
+        android:textSize="52sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@+id/GH1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/go_news_txt"
+        />
+
+    <TextView
+        android:id="@+id/go_news_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Go News"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_txt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+
+    <TextView
+        android:id="@+id/read_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:textFontWeight="500"
+        android:lineHeight="24dp"
+        android:text="Read Together With Us"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/go_news_txt" />
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GH1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

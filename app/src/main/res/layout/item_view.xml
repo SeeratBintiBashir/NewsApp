@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/item_view_image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/item_view_image"
+        app:layout_constraintBottom_toBottomOf="@id/GH2"
+        app:layout_constraintEnd_toEndOf="@+id/GV1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/news_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Jokowi: Tiga Periode ke Depan Tentukan RI Jadi Negara Maju"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:maxLines="2"
+        android:layout_marginBottom="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/GH1"
+        app:layout_constraintLeft_toRightOf="@+id/GV1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="CNN Indonesia"
+        android:textColor="@color/grey2"
+        app:layout_constraintTop_toBottomOf="@+id/news_title"
+        app:layout_constraintLeft_toRightOf="@+id/GV1"
+        app:layout_constraintBottom_toBottomOf="@id/GH1"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/news_category"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textSize="8sp"
+        app:layout_constraintTop_toBottomOf="@+id/GH1"
+        app:layout_constraintLeft_toRightOf="@+id/GV1"
+        app:layout_constraintRight_toLeftOf="@+id/GV2"
+        app:layout_constraintBottom_toBottomOf="@id/GH2"/>
+
+    <ImageView
+        android:id="@+id/icon_ellipse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_ellipse"
+        app:layout_constraintTop_toBottomOf="@id/GH1"
+        app:layout_constraintEnd_toStartOf="@+id/GV3"
+        app:layout_constraintStart_toStartOf="@+id/GV2"
+        app:layout_constraintBottom_toBottomOf="@id/GH2"
+        />
+
+<TextView
+    android:id="@+id/time"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="5 mins ago"
+    android:textSize="8sp"
+    app:layout_constraintTop_toBottomOf="@id/GH1"
+    app:layout_constraintEnd_toStartOf="@+id/GV4"
+    app:layout_constraintStart_toStartOf="@+id/GV3"
+    app:layout_constraintBottom_toBottomOf="@id/GH2"
+    />
+
+    <ImageView
+        android:id="@+id/icon_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_menu"
+        app:layout_constraintTop_toBottomOf="@id/GH1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/GV4"
+        app:layout_constraintBottom_toBottomOf="@id/GH2"
+        />
+
+    <View
+        android:id="@+id/line_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:padding="8dp"
+        android:background="@color/light_grey2"
+        app:layout_constraintTop_toBottomOf="@id/GH2"
+        />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".4" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".6" />
+
+    <androidx.constraintlayout.widget.Guideline
+    android:id="@+id/GV3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintGuide_percent=".65" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GV4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GH1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GH2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".95" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
